@@ -1,0 +1,27 @@
+.kw #wrapper .breadcrumb-wrapper {
+    margin: 20px 0;
+}
+
+.kw #wrapper .breadcrumb-wrapper .breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border: none;
+}
+
+.kw #wrapper .breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
+    color: #727272;
+}
+
+.kw #wrapper .breadcrumb-wrapper .breadcrumb .breadcrumb-item.active {
+    color: #70489d;
+}
+
+.kw #wrapper .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 16px;
+    color: #6c757d;
+    content: ">";
+}

@@ -1,0 +1,110 @@
+.typeahead,
+.tt-query,
+.tt-hint {
+    border: 0 none;
+    border-radius: 5px;
+    font-size: 22px;
+    /* Set input font size */
+    line-height: 30px;
+    outline: medium none;
+    padding: 10px 220px 10px 70px;
+    height: 75px;
+    width: 100%;
+}
+
+.typeahead {
+    background-color: #ffffff;
+    z-index: 101;
+}
+
+.typeahead::placeholder {
+    font-size: 22px;
+}
+
+.typeahead:focus {
+    border: 0 none;
+}
+
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.tt-hint {
+    color: #727272;
+}
+
+.tt-menu {
+    background-color: #ffffff;
+    border: 0 none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -5px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.tt-suggestion {
+    font-size: 22px;
+    /* Set suggestion dropdown font size */
+    padding: 10px 50px;
+    border-bottom: 1px dashed #d12b8a;
+    margin: 0 20px;
+}
+
+.tt-suggestion:hover {
+    cursor: pointer;
+    background-color: #d12b8a;
+    color: #ffffff;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+.kw #wrapper .tt-highlight {
+    font-weight: 400;
+}
+
+.kw #wrapper .tt-suggestion:last-child {
+    border-bottom: 0 none;
+}
+
+/* .kw #wrapper .c-bs-autocomplete {
+    position: relative;
+} */
+
+.kw #wrapper .c-main-search-btn {
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+    padding-right: 58px !important;
+    padding-left: 58px !important;
+    position: absolute;
+    margin-top: 9px;
+    top: 0;
+    right: 60px;
+    z-index: 102;
+}
+
+.kw #wrapper .c-bs-autocomplete {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.kw #wrapper .js-mainsearchclick i {
+    display: inline-block;
+    width: 28px;
+    padding: 0px 5px 0 9px;
+}
+
+.kw #wrapper .js-mainsearchclick i.icon-add-1 {
+    display: inline-block;
+    width: 28px;
+    padding: 0;
+    transform: rotate(45deg);
+}
+
+.twitter-typeahead{
+    width: 867px;
+}

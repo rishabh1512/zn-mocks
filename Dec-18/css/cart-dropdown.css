@@ -1,0 +1,71 @@
+/* These same css is use for delivery checkout page right sidebar section */
+
+.kw #wrapper .cart-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    max-width: 462px;
+    width: 100%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+    transform: scale(0.75) translateX(-50%);
+    transform-origin: 0% 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.kw #wrapper .cart-dropdown.open {
+    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+    transform: scale(1) translateX(-50%);
+    transform-origin: 0% 0;
+    opacity: 1;
+    overflow: hidden;
+    pointer-events: all;
+}
+
+.kw #wrapper .cart-dropdown .cart-header {
+    text-align: center;
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+}
+
+.kw #wrapper .cart-dropdown .cart-header .header-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kw #wrapper .cart-dropdown .product_plan_sect .product {
+    padding: 15px 0 15px 0;
+}
+
+.kw #wrapper .cart-dropdown .total-amt {
+    background-color: #f7f7f7;
+    padding: 15px 25px;
+}
+
+.kw #wrapper .cart-dropdown .product_plan_sect {
+    border-bottom: 1px solid #f7f7f7;
+    padding: 0;
+}
+
+.kw #wrapper .cart-dropdown .product_plan_sect .product span,
+.kw #wrapper .cart-dropdown .product_plan_sect .product p {
+    font-size: 14px;
+}
+
+.kw #wrapper .cart-dropdown .product .product-img {
+    padding: 15px;
+}
+
+.kw #wrapper .cart-dropdown .cart-footer {
+    padding-top: 20px;
+}
+
+.kw #wrapper .cart-dropdown .total-amt .payment_opts{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}

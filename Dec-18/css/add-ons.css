@@ -1,0 +1,62 @@
+.kw #wrapper .c-tablecontainer .table td,
+.kw #wrapper .c-tablecontainer .table th {
+    border-top: 0 none;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 13px 0;
+    vertical-align: middle;
+}
+
+.kw #wrapper .c-tablecontainer input[type="checkbox"],
+.kw #wrapper .c-tablecontainer input[type="radio"] {
+    margin: 0;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: 6px;
+    /* left: 0; */
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: transparent;
+    border-radius: 12px;
+    left: 8px;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #e3e3e3;
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: block;
+    width: 28px;
+    border-radius: 28px;
+    height: 28px;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #e3e3e3;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+    background-color: #d12b8a;
+}
+
+.kw #wrapper .c-tablecontainer select+span.downarrow::before {
+    top: 8px;
+    border: 2px solid #000;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 2px;
+}
