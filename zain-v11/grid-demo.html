@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="kw">
+
+<head>
+    <title>Tinext-Grid Demo</title>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+    <!-- Style links -->
+    <link rel="stylesheet" type="text/css" href="css/lf-clay.css" />
+    <link rel="stylesheet" type="text/css" href="css/lf-main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-custom-grid.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <style>
+        .row [class*=col]>div {
+            height: 100px;
+            width: 100%;
+            border: 1px solid;
+            margin-bottom: 100px;
+        }
+
+        .layout-1,
+        .layout-2,
+        .layout-3 {
+            position: relative;
+        }
+
+        .layout-1 .container-fluid-custom,
+        .layout-2 .container-fluid-custom,
+        .layout-3 .container-fluid-custom {
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper" class="container-fluid">
+
+
+        <p>Layout 1</p>
+        <div class="layout-1">
+          
+            <div class="container left-colunm">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <div class="container-fluid-custom right-colunm">
+                <div class="row">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <p>Layout 2</p>
+        <div class="layout-2">
+            <div class="container-fluid-custom  left-colunm">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div></div>
+                    </div>
+                    <div class="col-md-10"> </div>
+                </div>
+            </div>
+
+            <div class="container right-colunm">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p>Layout 3</p>
+        <div class="layout-3">
+
+            <div class="container-fluid-custom left-colunm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div></div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+
+            <div class="container  right-colunm">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
